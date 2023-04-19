@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B533965429EE5D6E00326F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533965329EE5D6E00326F08 /* AppDelegate.swift */; };
+		B533965629EE5D6E00326F08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533965529EE5D6E00326F08 /* SceneDelegate.swift */; };
+		B533965829EE5D6E00326F08 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533965729EE5D6E00326F08 /* WelcomeViewController.swift */; };
+		B533965B29EE5D6E00326F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B533965929EE5D6E00326F08 /* Main.storyboard */; };
+		B533965E29EE5D6F00326F08 /* Rotash_R_O_Service.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B533965C29EE5D6F00326F08 /* Rotash_R_O_Service.xcdatamodeld */; };
+		B533966029EE5D7300326F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B533965F29EE5D7300326F08 /* Assets.xcassets */; };
+		B533966329EE5D7300326F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B533966129EE5D7300326F08 /* LaunchScreen.storyboard */; };
+		B55AFEA329EE659D006F172B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFEA229EE659D006F172B /* HomeViewController.swift */; };
+		B55AFEA529EE6605006F172B /* ROViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFEA429EE6605006F172B /* ROViewController.swift */; };
+		B55AFEA729EE6613006F172B /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFEA629EE6613006F172B /* ServiceViewController.swift */; };
+		B55AFEA929EE6659006F172B /* RoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFEA829EE6659006F172B /* RoDetailViewController.swift */; };
+		B55AFEAB29EE6787006F172B /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFEAA29EE6787006F172B /* CartViewController.swift */; };
+		B55AFEAD29EE67D5006F172B /* AdressesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFEAC29EE67D5006F172B /* AdressesViewController.swift */; };
+		B55AFEAF29EE680B006F172B /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFEAE29EE680B006F172B /* AddAddressViewController.swift */; };
+		B55AFEB129EE79BD006F172B /* RO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFEB029EE79BD006F172B /* RO.swift */; };
+		B55AFEB329EE8549006F172B /* ROCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AFEB229EE8549006F172B /* ROCollectionViewCell.swift */; };
+		B5C9C96529EFBD82002728CB /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C9C96429EFBD82002728CB /* CartTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B533965029EE5D6E00326F08 /* Rotash R.O Service.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rotash R.O Service.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B533965329EE5D6E00326F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B533965529EE5D6E00326F08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B533965729EE5D6E00326F08 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B533965A29EE5D6E00326F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B533965D29EE5D6F00326F08 /* Rotash_R_O_Service.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rotash_R_O_Service.xcdatamodel; sourceTree = "<group>"; };
+		B533965F29EE5D7300326F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B533966229EE5D7300326F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B533966429EE5D7300326F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55AFEA229EE659D006F172B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B55AFEA429EE6605006F172B /* ROViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROViewController.swift; sourceTree = "<group>"; };
+		B55AFEA629EE6613006F172B /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		B55AFEA829EE6659006F172B /* RoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoDetailViewController.swift; sourceTree = "<group>"; };
+		B55AFEAA29EE6787006F172B /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		B55AFEAC29EE67D5006F172B /* AdressesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressesViewController.swift; sourceTree = "<group>"; };
+		B55AFEAE29EE680B006F172B /* AddAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressViewController.swift; sourceTree = "<group>"; };
+		B55AFEB029EE79BD006F172B /* RO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RO.swift; sourceTree = "<group>"; };
+		B55AFEB229EE8549006F172B /* ROCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5C9C96429EFBD82002728CB /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B533964D29EE5D6E00326F08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B533964729EE5D6E00326F08 = {
+			isa = PBXGroup;
+			children = (
+				B533965229EE5D6E00326F08 /* Rotash R.O Service */,
+				B533965129EE5D6E00326F08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B533965129EE5D6E00326F08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B533965029EE5D6E00326F08 /* Rotash R.O Service.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B533965229EE5D6E00326F08 /* Rotash R.O Service */ = {
+			isa = PBXGroup;
+			children = (
+				B533965329EE5D6E00326F08 /* AppDelegate.swift */,
+				B533965529EE5D6E00326F08 /* SceneDelegate.swift */,
+				B55AFEA129EE6545006F172B /* Model */,
+				B55AFEA029EE6534006F172B /* Views */,
+				B55AFE9F29EE6524006F172B /* Controllers */,
+				B533965F29EE5D7300326F08 /* Assets.xcassets */,
+				B533966429EE5D7300326F08 /* Info.plist */,
+				B533965C29EE5D6F00326F08 /* Rotash_R_O_Service.xcdatamodeld */,
+			);
+			path = "Rotash R.O Service";
+			sourceTree = "<group>";
+		};
+		B55AFE9F29EE6524006F172B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B533965729EE5D6E00326F08 /* WelcomeViewController.swift */,
+				B55AFEA229EE659D006F172B /* HomeViewController.swift */,
+				B55AFEA429EE6605006F172B /* ROViewController.swift */,
+				B55AFEA629EE6613006F172B /* ServiceViewController.swift */,
+				B55AFEA829EE6659006F172B /* RoDetailViewController.swift */,
+				B55AFEAA29EE6787006F172B /* CartViewController.swift */,
+				B55AFEAC29EE67D5006F172B /* AdressesViewController.swift */,
+				B55AFEAE29EE680B006F172B /* AddAddressViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B55AFEA029EE6534006F172B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B533965929EE5D6E00326F08 /* Main.storyboard */,
+				B533966129EE5D7300326F08 /* LaunchScreen.storyboard */,
+				B55AFEB229EE8549006F172B /* ROCollectionViewCell.swift */,
+				B5C9C96429EFBD82002728CB /* CartTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B55AFEA129EE6545006F172B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B55AFEB029EE79BD006F172B /* RO.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B533964F29EE5D6E00326F08 /* Rotash R.O Service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B533966729EE5D7300326F08 /* Build configuration list for PBXNativeTarget "Rotash R.O Service" */;
+			buildPhases = (
+				B533964C29EE5D6E00326F08 /* Sources */,
+				B533964D29EE5D6E00326F08 /* Frameworks */,
+				B533964E29EE5D6E00326F08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rotash R.O Service";
+			productName = "Rotash R.O Service";
+			productReference = B533965029EE5D6E00326F08 /* Rotash R.O Service.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B533964829EE5D6E00326F08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B533964F29EE5D6E00326F08 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = B533964B29EE5D6E00326F08 /* Build configuration list for PBXProject "Rotash R.O Service" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B533964729EE5D6E00326F08;
+			productRefGroup = B533965129EE5D6E00326F08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B533964F29EE5D6E00326F08 /* Rotash R.O Service */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B533964E29EE5D6E00326F08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B533966329EE5D7300326F08 /* LaunchScreen.storyboard in Resources */,
+				B533966029EE5D7300326F08 /* Assets.xcassets in Resources */,
+				B533965B29EE5D6E00326F08 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B533964C29EE5D6E00326F08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B55AFEAF29EE680B006F172B /* AddAddressViewController.swift in Sources */,
+				B55AFEA329EE659D006F172B /* HomeViewController.swift in Sources */,
+				B55AFEA529EE6605006F172B /* ROViewController.swift in Sources */,
+				B55AFEA929EE6659006F172B /* RoDetailViewController.swift in Sources */,
+				B533965829EE5D6E00326F08 /* WelcomeViewController.swift in Sources */,
+				B533965429EE5D6E00326F08 /* AppDelegate.swift in Sources */,
+				B55AFEA729EE6613006F172B /* ServiceViewController.swift in Sources */,
+				B5C9C96529EFBD82002728CB /* CartTableViewCell.swift in Sources */,
+				B533965629EE5D6E00326F08 /* SceneDelegate.swift in Sources */,
+				B55AFEB129EE79BD006F172B /* RO.swift in Sources */,
+				B55AFEAB29EE6787006F172B /* CartViewController.swift in Sources */,
+				B55AFEAD29EE67D5006F172B /* AdressesViewController.swift in Sources */,
+				B55AFEB329EE8549006F172B /* ROCollectionViewCell.swift in Sources */,
+				B533965E29EE5D6F00326F08 /* Rotash_R_O_Service.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B533965929EE5D6E00326F08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B533965A29EE5D6E00326F08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B533966129EE5D7300326F08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B533966229EE5D7300326F08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B533966529EE5D7300326F08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B533966629EE5D7300326F08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B533966829EE5D7300326F08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rotash R.O Service/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learn.Rotash-R-O-Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B533966929EE5D7300326F08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Rotash R.O Service/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learn.Rotash-R-O-Service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B533964B29EE5D6E00326F08 /* Build configuration list for PBXProject "Rotash R.O Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B533966529EE5D7300326F08 /* Debug */,
+				B533966629EE5D7300326F08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B533966729EE5D7300326F08 /* Build configuration list for PBXNativeTarget "Rotash R.O Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B533966829EE5D7300326F08 /* Debug */,
+				B533966929EE5D7300326F08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B533965C29EE5D6F00326F08 /* Rotash_R_O_Service.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B533965D29EE5D6F00326F08 /* Rotash_R_O_Service.xcdatamodel */,
+			);
+			currentVersion = B533965D29EE5D6F00326F08 /* Rotash_R_O_Service.xcdatamodel */;
+			path = Rotash_R_O_Service.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B533964829EE5D6E00326F08 /* Project object */;
+}
