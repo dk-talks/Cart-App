@@ -38,8 +38,20 @@ class RoDetailViewController: UIViewController {
         if var ro = ro {
             ro.isAddedToCart = true
         }
+        showAlert()
+        btnAddToCart.isEnabled = false
+        
     }
     
+    private func showAlert() {
+        
+        let alert = UIAlertController(title: "Added To Cart", message: "This R.O Purifier has been added to your Cart", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            alert.dismiss(animated: true)
+        }))
+        present(alert, animated: true, completion: nil)
+        
+    }
     
 
 

@@ -9,13 +9,20 @@ import UIKit
 
 class CartViewController: UIViewController {
     
+    let formatter = NumberFormatter()
     
+    var totalPrice: Int = 0
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var lblTotalPrice: UILabel!
     
     var cartItems: [RO] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        formatter.numberStyle = .currency
+        formatter.locale = Locale.current
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -23,8 +30,13 @@ class CartViewController: UIViewController {
         for item in RO.allRO {
             if item.isAddedToCart {
                 cartItems.append(item)
+                totalPrice += item.price
             }
         }
+        if let price = formatter.string(from: NSNumber(value: totalPrice)) {
+            lblTotalPrice.text = "Total: \(price)"
+        }
+
     }
     
 
@@ -39,12 +51,22 @@ class CartViewController: UIViewController {
         for item in RO.allRO {
             if item.id == id {
                 item.isAddedToCart = false
+                totalPrice -= item.price
             }
         }
+        if let price = formatter.string(from: NSNumber(value: totalPrice)) {
+            lblTotalPrice.text = "Total: \(price)"
+        }
+        
         cartItems.remove(at: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .fade)
         
     }
+    
+    @IBAction func btnProceedTapped(_ sender: Any) {
+        
+    }
+    
     
 
 }
@@ -65,11 +87,10 @@ extension CartViewController: UITableViewDataSource {
         
         cell.lblName.text = cartItems[indexPath.row].name
         cell.imgView.image = UIImage(named: cartItems[indexPath.row].image)
-        cell.lblPrice.text = "\(cartItems[indexPath.row].price)"
+        cell.lblPrice.text = formatter.string(from: NSNumber(value: cartItems[indexPath.row].price))
+        cell.tag = indexPath.row
 //        cell.btnDeleteItem.addTarget(self, action: #selector(deleteCartItem), for: .touchUpInside)
-        cell.layer.cornerRadius = 10
-        cell.layer.borderColor = UIColor.gray.cgColor
-        cell.layer.borderWidth = 2
+        
         
         return cell
     }
@@ -79,7 +100,8 @@ extension CartViewController: UITableViewDataSource {
 extension CartViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Handle row selection here
+        tableView.deselectRow(at: indexPath, animated: true)
     }
+    
     
 }

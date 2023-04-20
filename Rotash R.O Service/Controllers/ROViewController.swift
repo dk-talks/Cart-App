@@ -31,6 +31,7 @@ class ROViewController: UIViewController, UISearchResultsUpdating {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
         // Set up search controller
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -114,7 +115,7 @@ extension ROViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "selectRoCell", for: indexPath) as? ROCollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? ROCollectionViewCell {
             let product = RO.allRO[indexPath.item]
             cell.imageView.image = UIImage(named: product.image)
             cell.lblProductCost.text = formatter.string(from: NSNumber(value: product.price))
@@ -134,17 +135,17 @@ extension ROViewController: UICollectionViewDataSource {
 extension ROViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let collectionWidth = collectionView.bounds.width
-        return CGSize(width: collectionWidth/2, height: collectionWidth/2)
+        let size = (collectionView.frame.size.width-10)/2
+        return CGSize(width: size, height: size)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 5
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 5
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        return 5
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return 5
+//    }
 }
 
 

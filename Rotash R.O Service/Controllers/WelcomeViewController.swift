@@ -8,15 +8,28 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
+    
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        if(defaults.bool(forKey: "isProceed")) {
+            if let homeVC = storyboard?.instantiateViewController(withIdentifier: "homeVC") as? HomeViewController {
+                
+                navigationController?.pushViewController(homeVC, animated: false)
+                
+            }
+        }
         
     }
     
     
 
-
+    @IBAction func btnProceedTapped(_ sender: Any) {
+        defaults.set(true, forKey: "isProceed")
+        
+    }
+    
 }
 
